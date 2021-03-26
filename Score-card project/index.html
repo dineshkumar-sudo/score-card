@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <title>SCORE-CARD</title>
+        
+    </head>
+    <style>
+        body{
+            background-color: #1f1b29;
+        }
+        #heading1{
+            margin-left : 150px;
+        }
+        #name{
+            font-size: 20px;
+            margin-left: 90px;
+            padding: 10px;
+            display: inline;
+            background-color: black;
+            color: white;
+        }
+        #zero ,#one, #two , #three {
+            border-radius: 500px;
+            padding: 20px;
+        }
+        #four , #five ,#sixer , #seven{
+            border-radius: 100px;
+            padding: 20px;
+        }
+        #four ,#sixer {
+            background-color: greenyellow;
+        }
+       
+        .buttonsize{
+            font-size: xx-large;    
+            cursor: pointer;
+        }
+        #scoreboard{
+            font-size: larger;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .yourscore{
+               
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: larger;
+                display: inline;
+                border : 2px red solid;
+                font-size: 50px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+        p{
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+       
+
+    </style>
+    <body>
+        <h1 id="heading1"><span id="team1"> </span> VS <span id="team2"> </span></h1>
+
+        <p id="name">YOUR POCKET-CRICKET SCORE-CARD</p><br><br><br><br><br>
+
+        <p>Playing to: </p>
+
+        <p class="yourscore">YOUR SCORE : <span id="scoreboard">0</span></p><br><br><br></div>
+        <p id="boundary"></p>
+        <div class="buttonsize">
+            <button id="zero">0</button>
+            <button id="one">1</button>
+            <button id="two">2</button>
+            <button id="three">3</button><br><br>
+            <button id="four">4</button>
+            <button id= "five">5</button>
+            <button id="sixer">6</button>
+            <button id="seven">7</button>
+        </div>
+        <P>If Batting is finished click here to start second innings</P>
+        <button id="reset">RESET</button>
+       
+        
+
+        <p>First innings score : <span id="save">0</span>
+        </p>
+
+        <p>  <span id= "result"></span> needs <span id="target">0 </span> to win the match</p>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
